@@ -1,0 +1,18 @@
+{
+  "name": "tapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.2",
+    "forever": "^4.0.2",
+    "forever-monitor": "^3.0.3",
+    "nodemon": "^2.0.15",
+    "web3": "^1.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "forever rinkeby-api.js",
+    "build": "forever rinkeby-api.js"
+  }
+}
