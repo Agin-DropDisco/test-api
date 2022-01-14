@@ -55,8 +55,8 @@ async function getNFTs() {
                 if (Number(notBL) == Number(total - removed)) {
                     console.log('Loaded all ' + notBL);
                     let data = JSON.stringify(images);
-                    fs.writeFileSync('./api/rinkeby.json', data);
-                    console.log('Wrote Data to ./api/rinkeby.json');
+                    fs.writeFileSync('rinkeby.json', data);
+                    console.log('Wrote Data to rinkeby.json');
                     getNFTs();
                 }
                 // let data = JSON.stringify(images);
